@@ -1,0 +1,32 @@
+type Query{
+    bookById(id:ID):Book
+}
+
+type Book{
+    id:ID
+    name:String
+    pageCount:Int
+    author:Author
+}
+
+type Author {
+    id:ID
+    name:String
+    firstName:String
+}
+
+
+#请求API
+#{
+#    bookById(id: "book-1"){
+#        id
+#        name
+#        pageCount
+#        author{
+#            firstName
+#            name
+#        }
+#
+#    }
+#}
+
